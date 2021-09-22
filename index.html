@@ -16,6 +16,10 @@
 	    resize: both;
 	    overflow: scroll;
 	  background-position:center;}
+
+	  img {
+		  max-width: 100%;;
+	  }
     
     .header {position:fixed;margin-top:20px;margin-left:20px;z-index:394;width:350px; height:100px;}
 
@@ -23,7 +27,7 @@
 	  .header a:hover {text-decoration:#eeeeee wavy underline;}
 	  .header img {margin-top:-30px;}
 	  .header img:hover {transform:rotate(360deg); transform-style:flat; transition:9s;}
-
+	.page {height:75vh;}
 	  
 	  
 	  	  
@@ -37,6 +41,12 @@
 	  p a {font-style:italic; color:#ff7b00;}
 	  p a:hover {font-style:normal; color:#eeeeee; text-decoration:#eeeeee wavy underline;}
     
+	  #submit {
+		  background-color:#111111;
+		  position:relative;
+		  z-index: 999;
+		  margin:40px auto;
+	  }
   </style>
 
 	
@@ -60,7 +70,7 @@
 		
 
 	
-  <div class="about" id="about" style="margin-bottom:400px;">
+  <div class="about page" id="about" style="margin-bottom:400px;">
   		<img src="qcff-sticker-CT-highschoolers.png" style="float:right; width:330px;">
 	  <img src="qcff-sticker-6th.png" style="float:right; width:120px;">
 	  <h1>an opportunity for connecticut high school filmmakers to shine</h1>
@@ -78,18 +88,17 @@
 	  <p>Winners in categories like Best Cinematography win trophies and equipment.</p><br>
 
   </div>
-<br><br><br><br><br><br><br><br><br><br><br><br>
 
 <div style="margin:0 auto; text-align:center; position: relative;"><img src="posters.png" style="position: absolute; top: -9999px; bottom: -9999px; left: -9999px; right: -9999px; margin: auto; "></div>
 
   
-<div id="submit">
+<div id="submit" class="about">
 	<h1>Submit</h1>
 	<br><br>
 	<p>Use <a href="#">this Google form</a> to submit your short.</p>
 </div>
 
-<div class="about" id="alums">
+<div class="about page" id="alums">
 
 	<h1>Where are they now?</h1>
 	<br><br>
