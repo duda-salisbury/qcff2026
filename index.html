@@ -19,7 +19,7 @@
 	  background-position:center;}
 
 	  img {
-		  max-width: 100%;;
+		  max-width: 100%;
 	  }
     
     .header {position:fixed;margin-top:20px;margin-left:20px;z-index:394;width:350px; height:100px;}
@@ -30,7 +30,21 @@
 	  .header img:hover {transform:rotate(360deg); transform-style:flat; transition:9s;}
 	.page {min-height:75vh;}
 	  
-	  
+.spacer--40vh{
+    margin-top: -65px;
+    width: 100%;
+    height: 50vh;
+    background: url(posters.png);
+    background-size: 140%;
+	background-position: top;;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    position: relative;
+    z-index: 0;
+    position: relative;
+    z-index: 9999;
+    margin-bottom: -35px;
+}
 	  	  
 	  .trailer { width: 100%!important; z-index:-1; padding-top:200px; position:relative; display:block; margin-bottom:100px;}
 	  
@@ -62,7 +76,7 @@
 	
   <div class="header">
     
-	  <img src="qcff-sticker-logo.png" width="150px" style="float:left;"> <a href="#about">ABOUT</a><br><br><a href="#submit">SUBMIT</a><br><br><a href="#alums">ALUMS</a><br><br><a href="https://quietcornerfilmfestival.org/tagged/2019">QCFF'19⇗⇗</a>
+	  <img src="qcff-sticker-logo.png" width="150px" style="float:left;"> <a href="#about">ABOUT</a><br><br><a href="#submit">SUBMIT</a><br><br><a href="#alums">ALUMS</a><br><br><a href="https://quietcornerfilmfestival.org/tagged/2019">Archive &nbsp; ⇗⇗</a>
   
   </div>
 	
@@ -71,7 +85,7 @@
 		
 
 	
-  <div class="about page" id="about" style="margin-bottom:400px;">
+  <div class="about page" id="about">
   		<img src="qcff-sticker-CT-highschoolers.png" style="float:right; width:330px;">
 	  <img src="qcff-sticker-6th.png" style="float:right; width:120px;">
 	  <h1>an opportunity for connecticut high school filmmakers to shine</h1>
@@ -90,8 +104,9 @@
 
   </div>
 
-<div style="margin:0 auto; text-align:center; position: relative;"><img src="posters.png" style="position: absolute; top: -9999px; bottom: -9999px; left: -9999px; right: -9999px; margin: auto; "></div>
+<!-- <div style="margin:0 auto; text-align:center; position: relative;"><img src="posters.png" style="position: absolute; top: -9999px; bottom: -9999px; left: -9999px; right: -9999px; margin: auto; "></div> -->
 
+<div class="spacer--40vh"></div>
   
 <div id="submit" class="about">
 	<h1>Submit</h1>
