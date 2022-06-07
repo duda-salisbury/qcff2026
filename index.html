@@ -10,7 +10,70 @@
 	  html {
   scroll-behavior: smooth;
 }
-    
+    	
+.gallery {
+	display: flex;
+	padding: 2px;
+	transition: .3s;
+	
+	&:hover &__image {
+		filter: grayscale(1);
+	}
+	
+	&__column {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+	}
+	
+	&__link {
+		margin: 2px;
+		overflow: hidden;
+		
+		&:hover {
+			.gallery__image {
+				filter: grayscale(0);
+			}
+			
+			.gallery__caption {
+				opacity: 1;
+			}
+		}
+	}
+	
+	&__thumb {
+		position: relative;
+	}
+	
+	&__image {
+		display: block;
+		width: 100%;
+		transition: .3s;
+		
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	
+	&__caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 25px 15px 15px;
+		width: 100%;
+		font-family: acumin-pro-wide, sans-serif;
+		font-size: 12px;
+		color: white;
+		opacity: 0;
+		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+		transition: .3s;
+	}
+}
+	
+	  
+	  
+	  
+	  
     body {background-image: url(background-sm.jpg);
 	    background-size: cover;
 	    resize: both;
@@ -70,66 +133,7 @@
 	  
 	  .headline{font-family: acumin-pro-wide, sans-serif; font-weight: 900; font-style: normal; color:#eeeeee;font-size:50px; margin:0 auto; text-align:center; text-transform:uppercase;}
  
-	
-.gallery {
-	display: flex!important;
-	padding: 2px!important;
-	transition: .3s!important;
-	
-	&:hover &__image {
-		filter: grayscale(1)!important;
-	}
-	
-	&__column {
-		display: flex!important;
-		flex-direction: column!important;
-		width: 25%!important;
-	}
-	
-	&__link {
-		margin: 2px!important;
-		overflow: hidden!important;
-		
-		&:hover {
-			.gallery__image {
-				filter: grayscale(0)!important;
-			}
-			
-			.gallery__caption {
-				opacity: 1!important;
-			}
-		}
-	}
-	
-	&__thumb {
-		position: relative!important;
-	}
-	
-	&__image {
-		display: block!important;
-		width: 100%!important;
-		transition: .3s!important;
-		
-		&:hover {
-			transform: scale(1.1)!important;
-		}
-	}
-	
-	&__caption {
-		position: absolute!important;
-		bottom: 0!important;
-		left: 0!important;
-		padding: 25px 15px 15px!important;
-		width: 100%!important;
-		font-family: acumin-pro-wide, sans-serif!important;
-		font-size: 12px!important;
-		color: white!important;
-		opacity: 0;
-		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%)!important;
-		transition: .3s!important;
-	}
-}
-	
+
 	
 </style>
 
@@ -347,6 +351,8 @@
 			</figure>
 		</a>
 		</div>
+		
+		
 		<div class="gallery__column">
 		
 				<a href="/2022-red-carpet/5.jpg" target="_blank" class="gallery__link">
@@ -377,6 +383,8 @@
 			</figure>
 		</a>
 		</div>
+		
+		
 		<div class="gallery__column">
 				<a href="/2022-red-carpet/9.jpg" target="_blank" class="gallery__link">
 			<figure class="gallery__thumb">
@@ -406,6 +414,8 @@
 			</figure>
 		</a>
 		</div>
+		
+		
 		<div class="gallery__column">
 		
 				<a href="/2022-red-carpet/13.jpg" target="_blank" class="gallery__link">
@@ -436,6 +446,8 @@
 			</figure>
 		</a>
 		</div>
+		
+		
 		<div class="gallery__column">
 				<a href="/2022-red-carpet/17.jpg" target="_blank" class="gallery__link">
 			<figure class="gallery__thumb">
@@ -466,6 +478,8 @@
 			</figure>
 		</a>
 		</div>
+		
+		
 		<div class="gallery__column">
 			
 		<a href="/2022-red-carpet/21.jpg" target="_blank" class="gallery__link">
@@ -496,10 +510,7 @@
 			</figure>
 		</a>
 		
-		
-
-		
-	</div>
+		</div>
 </div>
 	
 	
