@@ -69,7 +69,71 @@
 	  }
 	  
 	  .headline{font-family: acumin-pro-wide, sans-serif; font-weight: 900; font-style: normal; color:#eeeeee;font-size:50px; margin:0 auto; text-align:center; text-transform:uppercase;}
-  </style>
+ 
+	
+	
+	
+.gallery {
+	display: flex;
+	padding: 2px;
+	transition: .3s;
+	
+	&:hover &__image {
+		filter: grayscale(1);
+	}
+	
+	&__column {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+	}
+	
+	&__link {
+		margin: 2px;
+		overflow: hidden;
+		
+		&:hover {
+			.gallery__image {
+				filter: grayscale(0);
+			}
+			
+			.gallery__caption {
+				opacity: 1;
+			}
+		}
+	}
+	
+	&__thumb {
+		position: relative;
+	}
+	
+	&__image {
+		display: block;
+		width: 100%;
+		transition: .3s;
+		
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	
+	&__caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 25px 15px 15px;
+		width: 100%;
+		font-family: acumin-pro-wide, sans-serif;
+		font-size: 12px;
+		color: white;
+		opacity: 0;
+		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+		transition: .3s;
+	}
+}
+	
+	
+</style>
 
 	
 	<link rel="stylesheet" href="https://use.typekit.net/ujd7cdl.css">
@@ -83,7 +147,7 @@
 	
   <div class="header">
     
-	  <img src="qcff-sticker-logo.png" width="200px" style="float:left;"> <a href="#about">ABOUT</a><br><a href="#judges">JUDGES<br><a href="#submit">SUBMIT</a><br><a href="#selections">2022 SELECTIONS</a><br><a href="#alums">ALUMS</a><br><br><a href="https://archive.quietcornerfilmfestival.org/tagged/2019">ARCHIVE⇗⇗</a><br><a href="https://www.teepublic.com/user/quietcornerfilmfestival">SHOP⇗⇗</a>
+	  <img src="qcff-sticker-logo.png" width="200px" style="float:left;"> <a href="#about">ABOUT</a><br><a href="#judges">JUDGES<br><a href="#submit">SUBMIT</a><br><a href="#selections">2022 SELECTIONS</a><br><a href="#red-carpet">2022 RED CARPET</a<br>><a href="#alums">ALUMS</a><br><br><a href="https://archive.quietcornerfilmfestival.org/tagged/2019">ARCHIVE⇗⇗</a><br><a href="https://www.teepublic.com/user/quietcornerfilmfestival">SHOP⇗⇗</a>
   
   </div>
 
@@ -194,6 +258,172 @@
 	<p>Matthew Johnson, Old Saybrook High School</p>
 
 <br><br>
+	
+	<div id="red-carpet" class="about">
+		
+	<div class="gallery">
+	<div class="gallery__column">
+		<a href="/2022-red-carpet/1.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/1.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		<a href="/2022-red-carpet/2.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/2.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+				<a href="/2022-red-carpet/3.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/3.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		<a href="/2022-red-carpet/4.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/4.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+				<a href="/2022-red-carpet/5.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/5.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		<a href="/2022-red-carpet/6.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/6.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+				<a href="/2022-red-carpet/7.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/7.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		<a href="/2022-red-carpet/8.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/8.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+				<a href="/2022-red-carpet/9.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/9.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		<a href="/2022-red-carpet/10.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/10.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+				<a href="/2022-red-carpet/11.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/11.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		<a href="/2022-red-carpet/12.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/12.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+				<a href="/2022-red-carpet/13.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/13.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		<a href="/2022-red-carpet/14.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/14.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+				<a href="/2022-red-carpet/15.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/15.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		<a href="/2022-red-carpet/16.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/16.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+				<a href="/2022-red-carpet/17.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/17.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		<a href="/2022-red-carpet/18.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/18.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		
+				<a href="/2022-red-carpet/19.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/19.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+				<a href="/2022-red-carpet/20.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/20.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		<a href="/2022-red-carpet/21.jpg" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/2022-red-carpet/21.jpg" alt="Photos by KHS Film Club" class="gallery__image">
+				<figcaption class="gallery__caption">Photos by KHS Film Club</figcaption>
+			</figure>
+		</a>
+		
+		
+
+		
+	</div>
+</div>
+	
+	
+	
+	
+	</div>
+	
+	<br><br>
+	
 	<div id="judges" class="about">
 
 		<h1 style="font-size:40px;">MEET THE 2022 JUDGES</h1>
